@@ -14,5 +14,7 @@ Scenario Outline: Start the game
 
         | numPositions | startingPositionX | startingPositionY | startingMoveCount |
         | 100          | 0                 | 0                 | 0                 |
+
+        
         
 

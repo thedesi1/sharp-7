@@ -7,12 +7,12 @@ namespace levelup
     [TestFixture]
     public class MapTest
     {
-        private Map? testObj;
+        private GameMap? testObj;
 
         [SetUp]
         public void SetUp()
         {
-            testObj = new Map();
+            testObj = new GameMap();
         }
 
         [Test]
@@ -32,5 +32,16 @@ namespace levelup
             //Assert
             Assert.IsNotNull(testObj.numPosition);
 
-    }}
+    }
+    
+  [Test]
+        public void getTotalPositions()
+    {
+            //Assert
+            Assert.IsNotNull(null);
+
+    }  
+    
+    
+    }
 }

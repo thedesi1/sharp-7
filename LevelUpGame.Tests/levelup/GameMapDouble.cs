@@ -8,9 +8,9 @@ public class GameMapDouble : GameMap
         {
         }
 
-        //public override Position CalculateNewPosition(Position currentPosition, GameController.DIRECTION direction)
-        //{
-        //    return stubbedPosition;
-        //}
+        public override Position CalculateNewPosition(Position currentPosition, GameController.DIRECTION direction)
+        {
+            return stubbedPosition;
+        }
 
 }

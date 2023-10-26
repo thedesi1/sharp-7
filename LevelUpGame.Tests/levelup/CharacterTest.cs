@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using levelup;
+using System;
 
 namespace levelup
 {
@@ -11,11 +12,15 @@ namespace levelup
         [SetUp]
         public void SetUp()
         {
-            testObj = new Character();
+            String testName = "Bob";
+            testObj = new Character(testName);
         }
 
-
-        
+        [Test]
+        public void TestCharacterCreate()
+        {
+            Assert.AreEqual(testObj.Name, "Bob");
+        }
     }
 
 

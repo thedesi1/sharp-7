@@ -3,11 +3,11 @@ namespace levelup
 {
     public class Character
     {
-        public string? Name { get; set; }
+        public String Name { get; set; } = String.Empty;
         public Position? Position { get; set; }
         public GameMap? gameMap { get; set; }
+         public int moveCount { get; set; }
 
-        public int moveCount { get; set; }
 
         public Character(string name)
         {

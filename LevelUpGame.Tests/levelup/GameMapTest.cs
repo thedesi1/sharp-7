@@ -27,21 +27,34 @@ namespace levelup
         }
 
         [Test]
-        public void getPositions()
-    {
+        public void getnumPositionIsNotNull()
+        {
             //Assert
             Assert.IsNotNull(testObj.numPosition);
 
-    }
-    
-  [Test]
+        }
+
+        [Test]
+        public void getPositionsIsNotNull()
+        {
+            
+            //Act
+            var test = testObj.getPositions();
+
+            //Assert
+            Assert.IsNotNull(test);
+
+        }
+
+
+        [Test]
         public void getTotalPositions()
-    {
+        {
             //Assert
             Assert.IsNotNull(null);
 
-    }  
-    
-    
+        }
+
+
     }
 }

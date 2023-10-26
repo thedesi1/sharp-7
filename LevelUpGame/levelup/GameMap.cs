@@ -1,4 +1,6 @@
 using System.Drawing;
+using static levelup.GameController;
+
 
 namespace levelup
 {
@@ -19,11 +21,11 @@ namespace levelup
         }
 
 
-        public void calculatePositions(Position startingPosition, DIRECTION direction)
-        {
+        // public void calculatePositions(Position startingPosition, DIRECTION direction)
+        // {
 
             
-        }
+        // }
         public Boolean isPositionValid(Point positionCoordinates)
         {
             return false;

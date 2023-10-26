@@ -1,10 +1,18 @@
-using System.Drawing;
 
-public class Position
+namespace levelup
 {
-    public Point coordinates { get; set; }
-    public Position(int xCoordinates, int yCoordinates)
+    public class Position
     {
-        coordinates = new Point(xCoordinates, yCoordinates);
+        public int x { get; set; }
+        public int y { get; set; }
+
+        public Position(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
+
+
     }
 }

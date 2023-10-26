@@ -14,12 +14,7 @@ Scenario Outline: Move in a direction
     And YCoordinates  <endingPositionY>
     And the new move count is <endingMoveCount>
     Examples:
-
-        | startingPositionX | startingPositionY | direction | startingMoveCount | endingPositionX | endingPositionY | endingMoveCount |
-        | 0                 | 0                 | NORTH     | 10                | 0               | 1               | 11              |
-        | 0 | 0 | SOUTH | 32 | 0 | 0 | 33 |
-
-        
+       
         | startingPositionX | startingPositionY | direction |startingMoveCount | endingPositionX | endingPostionY | endingMoveCount |
         | 5 | 5 | East |56| 6 | 5 |57|
         | 5 | 5 | West |65| 4 | 5 |66|
@@ -32,4 +27,5 @@ Scenario Outline: Move in a direction
         | 9 | 0 | East |33| 9 | 0 |34|
         | 9 | 0 | South |19| 9 | 0 |20|
         | 0 | 0 |South |44| 0 | 0 |45|
-        | 0 | 0 |West |78| 0 | 0 |79|
+        | 0 | 0 |West |78| 0 | 0 |79| 
+        |4  | 3 |North|88| 4 | 4 |89|

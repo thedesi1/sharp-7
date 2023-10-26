@@ -16,7 +16,7 @@ namespace levelup
         }
 
         [Test]
-        public void IsGameResultInitialized()
+        public void IsPositionValid()
         {
             //Arrange
             Point test = new();
@@ -26,6 +26,11 @@ namespace levelup
             Assert.IsNotNull(testObj.isPositionValid(test));
         }
 
-        
-    }
+        [Test]
+        public void getPositions()
+    {
+            //Assert
+            Assert.IsNotNull(testObj.numPosition);
+
+    }}
 }

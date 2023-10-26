@@ -21,6 +21,13 @@ namespace levelup
         {
             Assert.AreEqual(testObj.Name, "Bob");
         }
+
+         [Test]
+        public void TestEnterMap()
+        {
+            //testObj.EnterMap(GameMap map);
+            //Position newPosition = testObj.GetPosition();
+        }
     }
 
 

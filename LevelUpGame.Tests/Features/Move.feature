@@ -26,7 +26,7 @@ Scenario Outline: Move in a direction
         | 5 | 5 | South |75| 5 | 4 |76|
         | 5 | 5 | North |89| 5 | 6 |90|
         | 9 | 9 | East |14| 9 | 9 |15|
-        | 9 | 9 | North |33|| 9 | 9 |34|
+        | 9 | 9 | North |33| 9 | 9 |34|
         | 0 | 9 | West |52| 0 | 9 |53|
         | 0 | 9 | North |49| 0 | 9 |50|
         | 9 | 0 | East |33| 9 | 0 |34|

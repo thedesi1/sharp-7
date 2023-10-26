@@ -79,6 +79,19 @@ namespace LevelUpGame.Test.Features
         [NUnit.Framework.CategoryAttribute("acceptance")]
         [NUnit.Framework.TestCaseAttribute("0", "0", "NORTH", "10", "0", "1", "11", null)]
         [NUnit.Framework.TestCaseAttribute("0", "0", "SOUTH", "32", "0", "0", "33", null)]
+        [NUnit.Framework.TestCaseAttribute("startingPositionX", "startingPositionY", "direction", "startingMoveCount", "endingPositionX", "endingPostionY", "endingMoveCount", null)]
+        [NUnit.Framework.TestCaseAttribute("5", "5", "East", "56", "6", "5", "57", null)]
+        [NUnit.Framework.TestCaseAttribute("5", "5", "West", "65", "4", "5", "66", null)]
+        [NUnit.Framework.TestCaseAttribute("5", "5", "South", "75", "5", "4", "76", null)]
+        [NUnit.Framework.TestCaseAttribute("5", "5", "North", "89", "5", "6", "90", null)]
+        [NUnit.Framework.TestCaseAttribute("9", "9", "East", "14", "9", "9", "15", null)]
+        [NUnit.Framework.TestCaseAttribute("9", "9", "North", "33", "9", "9", "34", null)]
+        [NUnit.Framework.TestCaseAttribute("0", "9", "West", "52", "0", "9", "53", null)]
+        [NUnit.Framework.TestCaseAttribute("0", "9", "North", "49", "0", "9", "50", null)]
+        [NUnit.Framework.TestCaseAttribute("9", "0", "East", "33", "9", "0", "34", null)]
+        [NUnit.Framework.TestCaseAttribute("9", "0", "South", "19", "9", "0", "20", null)]
+        [NUnit.Framework.TestCaseAttribute("0", "0", "South", "44", "0", "0", "45", null)]
+        [NUnit.Framework.TestCaseAttribute("0", "0", "West", "78", "0", "0", "79", null)]
         public void MoveInADirection(string startingPositionX, string startingPositionY, string direction, string startingMoveCount, string endingPositionX, string endingPositionY, string endingMoveCount, string[] exampleTags)
         {
             string[] @__tags = new string[] {

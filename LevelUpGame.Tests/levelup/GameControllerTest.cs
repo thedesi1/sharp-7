@@ -29,6 +29,14 @@ namespace levelup
             Assert.AreEqual("ARBITRARY NAME", gameControllerToTest.GetStatus().characterName);
         }
 
+         [Test]
+        public void StartGameCreatesMap()
+        {
+            gameControllerToTest.StartGame();
+            Assert.NotNull(gameControllerToTest.gameMap);
+        }
+
+
         
     }
 }

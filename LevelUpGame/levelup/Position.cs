@@ -12,7 +12,10 @@ namespace levelup
             this.y = y;
         }
 
-
+        public override string ToString()
+        {
+            return $"X =  {x.ToString()}, Y = {y.ToString()}";
+        }
 
     }
 }

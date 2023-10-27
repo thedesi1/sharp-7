@@ -1,3 +1,4 @@
+using System.Xml.Serialization;
 using levelup;
 using NUnit.Framework;
 
@@ -18,7 +19,7 @@ namespace levelup
         [Test]
         public void CharacterHasNameAndMoveCountWhenInitialized()
         {
-            int moveCountWhenCaracterIsCreated = 0;
+            int moveCountWhenCaracterIsCreated = 0;CodeGenerationOptions 
             Assert.AreEqual(characterBeingTested.Name, arbitraryName);
             Assert.AreEqual(moveCountWhenCaracterIsCreated, characterBeingTested.moveCount);
         }

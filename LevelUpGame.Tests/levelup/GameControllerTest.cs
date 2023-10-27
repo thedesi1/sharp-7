@@ -46,5 +46,15 @@ namespace levelup
             Assert.AreEqual(fakeMap.startingPosition.y, gameControllerToTest.GetStatus().currentPosition.y);
         }
         
+        [Test]
+        public void MoveDelegatesToCharacter()
+        {
+            MockCharacter mockChar = new MockCharacter("");
+            gameControllerToTest.character = mockChar;
+            gameControllerToTest.Move(GameController.DIRECTION.EAST);
+            mockChar = (MockCharacter) gameControllerToTest.character;
+            Assert.AreEqual(GameController.DIRECTION.EAST, mockChar.lastDirectionCalled);
+            Assert.AreEqual(1, mockChar.timesCalled);
+        }
     }
 }

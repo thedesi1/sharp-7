@@ -6,46 +6,46 @@ namespace levelup
     [TestFixture]
     public class CharacterTest
     {
-        private Character? testObj;
+        private Character? characterBeingTested;
         string arbitraryName = "Arbitrary Name";
 
         [SetUp]
         public void SetUp()
         {
-            testObj = new Character(arbitraryName);
+            characterBeingTested = new Character(arbitraryName);
         }
 
         [Test]
         public void CharacterHasNameAndMoveCountWhenInitialized()
         {
-            Assert.AreEqual(testObj.Name, "Arbitrary Name");
-            Assert.AreEqual(0, testObj.moveCount);
+            Assert.AreEqual(characterBeingTested.Name, "Arbitrary Name");
+            Assert.AreEqual(0, characterBeingTested.moveCount);
         }
 
         [Test]
         public void CharacterHasNewPositionOnEnterMap()
         {
             FakeGameMap m = new FakeGameMap();
-            testObj.EnterMap(m);
-            Assert.AreEqual(m.startingPosition, testObj.Position);
-            Assert.AreEqual(m, testObj.gameMap);
+            characterBeingTested.EnterMap(m);
+            Assert.AreEqual(m.startingPosition, characterBeingTested.Position);
+            Assert.AreEqual(m, characterBeingTested.gameMap);
         }
 
         [Test]
         public void CharacterHasNewPositionOnMove()
         {
             FakeGameMap m = new FakeGameMap();
-            testObj.gameMap = m;
-            testObj.Move(GameController.DIRECTION.NORTH);
-            Assert.AreEqual(m.stubbedPosition, testObj.Position);
+            characterBeingTested.gameMap = m;
+            characterBeingTested.Move(GameController.DIRECTION.NORTH);
+            Assert.AreEqual(m.stubbedPosition, characterBeingTested.Position);
         }
 
         [Test]
         public void CharacterIncrementsMoveCountOnMove()
         {
-            testObj.gameMap = new FakeGameMap();
-            testObj.Move(GameController.DIRECTION.SOUTH);
-            Assert.AreEqual(1, testObj.moveCount);
+            characterBeingTested.gameMap = new FakeGameMap();
+            characterBeingTested.Move(GameController.DIRECTION.SOUTH);
+            Assert.AreEqual(1, characterBeingTested.moveCount);
         }
         
     }

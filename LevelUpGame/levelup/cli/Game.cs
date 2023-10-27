@@ -117,7 +117,7 @@ class Game
         gameController.StartGame();
         // TODO: Update this prompt. Also, do you want to get the game status and tell
         // the player where their character is?
-        Console.WriteLine("Welcome to Sharp Dragons! You have entered a scary place.");
+        Console.WriteLine("Welcome to Sharp Dragons! You have entered a scary place called Florida.");
     }
     static void MoveNorth()
     {
@@ -147,7 +147,7 @@ class Game
         if (answer == true)
         {
             //TODO: PRINT FINAL SUMMARY
-            Console.WriteLine("You exit the mysterious world.");
+            Console.WriteLine("You exit the mysterious Florida.");
             PrintSummary();
             Environment.Exit(0);
         }
@@ -155,7 +155,7 @@ class Game
 
     static void PrintSummary()
     {
-        Console.WriteLine("Exiting the mysterious land!");
+        Console.WriteLine("Exiting the mysterious Florida!");
         foreach (GameController.GameStatus status in gameHistory)
         {
             // TODO: Override toString on game status to print pretty
@@ -169,6 +169,4 @@ class Game
     {
         gameHistory.Add(status);
     }
-
-
 }

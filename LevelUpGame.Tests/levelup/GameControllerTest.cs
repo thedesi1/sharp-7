@@ -36,7 +36,15 @@ namespace levelup
             Assert.NotNull(gameControllerToTest.gameMap);
         }
 
-
+        [Test]
+        public void StartGameEntersMapAndUpdatesStatus() 
+        {
+            FakeGameMap fakeMap = new FakeGameMap();
+            gameControllerToTest.gameMap = fakeMap;
+            gameControllerToTest.StartGame();
+            Assert.AreEqual(fakeMap.startingPosition.x, gameControllerToTest.GetStatus().currentPosition.x);
+            Assert.AreEqual(fakeMap.startingPosition.y, gameControllerToTest.GetStatus().currentPosition.y);
+        }
         
     }
 }

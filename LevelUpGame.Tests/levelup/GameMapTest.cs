@@ -9,6 +9,8 @@ namespace levelup
     {
         private GameMap? testObj;
 
+        private const int coordinate4 = 4;
+        private const int coordinate3 = 3;
         [SetUp]
         public void SetUp()
         {
@@ -20,7 +22,7 @@ namespace levelup
         {
             Assert.NotNull(testObj.positions);
             Assert.AreEqual(100, testObj.positions.Length);
-            Position samplePosition = testObj.positions[4, 3];
+            Position samplePosition = testObj.positions[coordinate4, coordinate3];
             Assert.AreEqual(4, samplePosition.x);
             Assert.AreEqual(3, samplePosition.y);
             Assert.NotNull(testObj.startingPosition);
@@ -31,7 +33,7 @@ namespace levelup
         [Test]
         public void TestCalcPositionInCenterOfBoardEast()
         {
-            Position startPos = testObj.positions[3, 4];
+            Position startPos = testObj.positions[coordinate3, coordinate4];
             Position newPos = testObj.CalculateNewPosition(startPos, GameController.DIRECTION.EAST);
             Assert.AreEqual(4, newPos.x);
             Assert.AreEqual(startPos.y, newPos.y);

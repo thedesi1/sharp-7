@@ -19,7 +19,7 @@ namespace levelup
         public void CharacterHasNameAndMoveCountWhenInitialized()
         {
             int moveCountWhenCaracterIsCreated = 0;
-            Assert.AreEqual(characterBeingTested.Name, "Arbitrary Name");
+            Assert.AreEqual(characterBeingTested.Name, arbitraryName);
             Assert.AreEqual(moveCountWhenCaracterIsCreated, characterBeingTested.moveCount);
         }
 
